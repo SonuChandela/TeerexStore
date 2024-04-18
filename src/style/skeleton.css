@@ -1,0 +1,31 @@
+/* Skeleton styles*/
+
+/* blogs display */
+.product-skeleton {
+    width: calc(33% - 1rem);
+    box-shadow: 0 6px 12px -2px rgba(50, 50, 93, .25),
+        0 3px 7px -3px rgba(0, 0, 0, .3);
+}
+
+.product-skeleton .skeleton-wrapper {
+    padding: 0 3%;
+    margin: 1.5% 0;
+}
+
+.product-skeleton .skeleton-wrapper .skeleton-header {
+    background-color: #E5E4E2;
+    height: 235px;
+    margin: 1.5% 0;
+}
+
+.product-skeleton .skeleton-wrapper .skeleton-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5% 0;
+}
+
+.product-skeleton .skeleton-wrapper .skeleton-footer div {
+    background-color: #E5E4E2;
+    width: 80px;
+    height: 30px;
+}

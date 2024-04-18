@@ -1,0 +1,68 @@
+.navbar {
+    padding: 1rem 0;
+    background-color: #f1f0f0;
+}
+
+.navbar .navbar-brand {
+    padding: 0.5rem 1px;
+}
+
+.navbar .navbar-brand h4 {
+    margin: 0;
+}
+
+.navbar .navbar-items {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-items .navbar-items-list {
+    margin: 0;
+    padding: 0.4rem;
+}
+
+.navbar .navbar-items .navbar-cart {
+    position: relative;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-items .navbar-cart svg {
+    font-size: 1.1rem;
+}
+
+.navbar .navbar-items .navbar-cart .cart-value {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    top: -4px;
+    right: 0;
+    background-color: #454545;
+    color: #fff;
+    padding: 0.3rem 0.2rem;
+    font-size: 0.8rem;
+    z-index: 99;
+}
+
+.navbar .navbar-items .navbar-items-list .navbar-item {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-items .navbar-items-list .navbar-item:hover {
+    font-weight: 800;
+}
+
+/* meadia query */
+
+@media only screen and (max-width: 600px) {
+    .navbar .navbar-items .navbar-items-list {
+        display: none;
+    }
+}

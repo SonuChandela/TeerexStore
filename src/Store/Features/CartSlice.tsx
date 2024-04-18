@@ -43,9 +43,10 @@ const CartSlice = createSlice({
         // action for subtract product quantity
         subtract: (state, action: PayloadAction<CartItem['id']>) => {
             const productId = action.payload;
+            const existingProductIndex = state.items.findIndex(item => item.id === productId);
             const existingProduct = state.items.find(item => item.id === productId);
             // product exist in cart state then subtract by one 
-            (existingProduct && existingProduct.cartQuantity !== undefined && existingProduct.cartQuantity > 0) ? existingProduct.cartQuantity -= 1 : null;
+            (existingProduct && existingProduct.cartQuantity !== undefined && existingProduct.cartQuantity > 1) ? existingProduct.cartQuantity -= 1 : state.items.splice(existingProductIndex, 1);;
         },
         // remover product from cart state
         removeFromCart(state, action: PayloadAction<CartItem['id']>) {

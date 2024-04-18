@@ -61,7 +61,7 @@
 
 /* meadia query */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .navbar .navbar-items .navbar-items-list {
         display: none;
     }

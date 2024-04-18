@@ -1,8 +1,5 @@
 /* Skeleton styles*/
-
-/* blogs display */
 .product-skeleton {
-    width: calc(33% - 1rem);
     box-shadow: 0 6px 12px -2px rgba(50, 50, 93, .25),
         0 3px 7px -3px rgba(0, 0, 0, .3);
 }
@@ -28,4 +25,10 @@
     background-color: #E5E4E2;
     width: 80px;
     height: 30px;
+}
+
+@media only screen and (max-width:700px) {
+    .product-skeleton .skeleton-wrapper .skeleton-header {
+        height: 409px;
+    }
 }

@@ -1,18 +1,21 @@
-import ProductList from './pages/ProductList'
+
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import ShopingCart from './pages/ShopingCart';
+import ProductList from "./pages/productList";
+import Cart from "./pages/ShoppingCart";
+
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <ProductList />
-    }, {
+    },
+    {
       path: "/cart",
-      element: <ShopingCart />
+      element: <Cart />
     },
   ]);
 

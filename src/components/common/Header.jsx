@@ -1,13 +1,12 @@
-import React from 'react';
 import { Link } from "react-router-dom";
-import { FaCartShopping } from "react-icons/fa6";
 import "../../style/header.css";
-import { useSelector } from 'react-redux';
-import { RootState } from '../../Store/store';
-import { Product } from '../../Store/Features/ProductSlice';
+import { useSelector } from "react-redux";
+import { FaCartShopping } from "react-icons/fa6";
 
-const Header: React.FC = () => {
-    const cartItems: Product[] = useSelector((state: RootState) => state.cart.items);
+
+const Header = () => {
+    const {items} = useSelector((state) => state.cart);
+
     return (
         <>
             <header className="navbar">
@@ -25,7 +24,8 @@ const Header: React.FC = () => {
                             <div className="navbar-cart">
                                 <Link to="/cart">
                                     <FaCartShopping />
-                                    <span className="cart-value">{cartItems.length}</span>
+                                    {/* <span className="cart-value">0</span> */}
+                                    <span className="cart-value">{items?.length}</span>
                                 </Link>
                             </div>
                         </div>
@@ -35,4 +35,5 @@ const Header: React.FC = () => {
         </>
     )
 }
+
 export default Header;
